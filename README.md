@@ -11,12 +11,10 @@ Easy to use for Learning, POCs and Unit Tests
 # What is the H2 Database?
  H2 is an open source database and is written in Java. It is very fast and of very small size. It is primarily used as an in-memory database which means it stores the data in memory and will not persist data on disk. Although if we need to persist the data, it supports that as well.
  
- <dependencies>
     <dependency>
         <groupId>com.h2database</groupId>
         <artifactId>h2</artifactId>
     </dependency>
-</dependencies>
 
 # Using H2’s Web Console
 The H2 database provides a browser-based console that Spring Boot can auto-configure for you. The console is auto-configured when the following conditions are met:
@@ -34,18 +32,16 @@ By default, the console is available at /h2-console. You can customize the conso
 # What is HSQLDB?
 HSQLDB (HyperSQL DataBase) is the leading SQL relational database software written in Java. It offers a small, fast multithreaded and transactional database engine with in-memory and disk-based tables and supports embedded and server modes. It includes a powerful command line SQL tool and simple GUI query tools.
 
-<dependency>
-    <groupId>org.hsqldb</groupId>
-    <artifactId>hsqldb</artifactId>
-    <scope>runtime</scope>
-</dependency>
+    <dependency>
+        <groupId>org.hsqldb</groupId>
+        <artifactId>hsqldb</artifactId>
+    </dependency>
 
 # What is Apache Derby?
 Derby is based on the Java, JDBC, and SQL standards.
 Derby provides an embedded JDBC driver that lets you embed Derby in any Java-based solution.
 
-<dependency>
-    <groupId>org.apache.derby</groupId>
-    <artifactId>derby</artifactId>
-    <scope>runtime</scope>
-</dependency>
+      <dependency>
+          <groupId>org.apache.derby</groupId>
+          <artifactId>derby</artifactId>
+      </dependency>
